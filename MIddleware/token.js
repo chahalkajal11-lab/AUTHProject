@@ -5,7 +5,6 @@ export const tokenchecker =(req,res,next)=>{
         let token  = req.headers.cookie.split("=")[1];
         if("cookie" in req.headers){
          let decode = jwt.verify(token,process.env.SECRET_KEY)
-           console.log(decode)
            req.email = decode.email
            next()   
         }else{

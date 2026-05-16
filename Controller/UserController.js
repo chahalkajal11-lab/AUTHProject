@@ -26,7 +26,6 @@ export const Login = async(req,res)=>{
             })
            }
           let  token = generateJWT(user)
-        console.log(token)
         res.cookie("token",token)
 
 

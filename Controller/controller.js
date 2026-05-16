@@ -33,6 +33,7 @@ export const signUp = async (req, res) => {
             address,
             contactNo,
             email,
+            image,
             password:hashedPass
         });
        if(user){
