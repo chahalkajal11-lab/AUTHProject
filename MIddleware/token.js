@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken"
 export const tokenchecker =(req,res,next)=>{
-    //    console.log (req.headers.cookie)
     try {     
         let token  = req.headers.cookie.split("=")[1];
         if("cookie" in req.headers){
