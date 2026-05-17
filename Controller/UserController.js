@@ -41,18 +41,5 @@ export const Login = async(req,res)=>{
     }
 }
 
-export const getAllUser = async (req,res)=>{
-  try {
-    let user = await Main.find()
-     res.status(200).json({
-            status:"Success",
-            data:user
-          })
-  } catch (error) {
-      res.status(400).json({
-            status:"Fail",
-            message:`Error   ${error.message}`
-          })
-  }
-}
+
 
