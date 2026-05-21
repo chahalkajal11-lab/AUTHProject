@@ -8,5 +8,5 @@ const  authRoutes = express.Router()
 authRoutes.post("/signup", Uploader.single("image"), signUp);
 authRoutes.post("/login", Login)
 authRoutes.get("/users", getAllUser)
-authRoutes.get("/user/:id", getSingleUser)
+authRoutes.get("/users/:id", getSingleUser)
 export default authRoutes
